@@ -1,0 +1,2 @@
+# Human-Activity-Recognition-from-Videos
+Nowadays, it’s a very hot topic on video-based human action detection, which has recently been demonstrated to be very useful in a wide range of applications including video surveillance, tele-monitoring of patients and senior people, medical diagnosis and training, video content analysis and search, and intelligent human computer interaction [1]. As video camera sensors become less expensive, this approach is increasingly attractive since it is low cost and can be adapted to different video scenarios.
