@@ -1,2 +1,15 @@
 # Human-Activity-Recognition-from-Videos
 Nowadays, it’s a very hot topic on video-based human action detection, which has recently been demonstrated to be very useful in a wide range of applications including video surveillance, tele-monitoring of patients and senior people, medical diagnosis and training, video content analysis and search, and intelligent human computer interaction [1]. As video camera sensors become less expensive, this approach is increasingly attractive since it is low cost and can be adapted to different video scenarios.
+
+Actions can be characterized by spatiotemporal patterns. Similar to the object detection, action detection finds the reoccurrences of such spatiotemporal patterns through pattern matching. Compared with human motion capture, which requires recovering the full pose and motion of the human body, the task of action detection only requires detecting the occurrences of a certain type of actions. Video features for action detection The development of video-based action detection technology has been ongoing for decades. The extraction of appropriate features is critical to action detection. Ideally, visual features are able to handle the following challenges for robust action detection:
+
+1. Viewpoint variations of the camera
+2. Performing speed variations for different people
+3. Different anthropometry of the performers and their movement style variations
+4. Cluttered and moving backgrounds.
+
+Previously, human bodies were tracked and segmented from the videos to characterize actions and motion trajectories are popularly used to represent and recognize actions. Unfortunately, only limited success has been achieved because robust object tracking is itself a nontrivial task. Recently, interest point based video features show promising results in the action detection research. Such interest point-based video features do not require foreground/background separation or human tracking [2]. We searched a lot and found many techniques to identify actions in videos, like space-time interest point (STIP), which is developed by Laptev and Lindeberg. STIP features have been frequently used for action recognition. However, the detected interest points are usually quite sparse, and it is time consuming to extract STIP features for high-resolution videos. And then we finalized to work on few types of interest-point based feature extractions like;
+
+1. The first type of interest point features is called 3-D SIFT, developed by Scovanner et al [3]. This descriptor is similar to scale invariant feature transformation (SIFT) descriptor except that the gradient direction for each pixel is a three-dimensional vector. It can work with any interest point detector.
+2. The second type of interest point features is named spatiotemporal interest point (STIP) [2].
+3. The third type of classification is done by using Histograms of Oriented Optical Flow (HOOF), Histogram of Oriented Optical Flow (HOOF) features are independent of the scale of the moving person as well as the direction of motion. Extraction of HOOF features does not require any prior human segmentation or background subtraction.
